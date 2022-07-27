@@ -1,0 +1,335 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  a {
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+  }
+
+  #tool {
+    background-image: url(./images/images.jfif);
+    height: 60px;
+    position: sticky;
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  #nav-menu {
+    width: 100%;
+    margin-top: 30px;
+    justify-items: center;
+    justify-content: space-between;
+  }
+
+  #hamburger {
+    padding-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 30px;
+  }
+
+  .events-header hr {
+    margin-top: 10px;
+    width: 50px;
+    justify-content: center;
+    margin-left: 220px;
+    background-color: #ec5242;
+    border-color: #ec5242;
+  }
+
+  .footer-head hr {
+    width: 50px;
+    margin-left: 22px;
+    margin-top: 5px;
+    background-color: #ec5242;
+    border-color: #ec5242;
+  }
+
+  #hamburger hr {
+    z-index: 10;
+    background-color: #020000;
+  }
+
+  .ham {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(168, 162, 162);
+
+    /* margin: 1px; */
+    transition: 0.4s;
+    z-index: 10;
+  }
+
+  #hamburger.active .ham:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger.active .ham:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #hamburger.active .ham:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  #bar-menu {
+    position: fixed;
+    left: -150%;
+    top: 0.001px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #3e3c3c;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 0.3s;
+    height: 755px;
+
+    /* z-index: 10; */
+    padding-top: 130px;
+    padding-left: 40px;
+    list-style: none;
+  }
+
+  #bar-menu.active {
+    left: 0;
+  }
+
+  #bar-menu hr {
+    margin-top: 20px;
+  }
+
+  .bar {
+    width: 100%;
+    margin-top: 40px;
+    font-size: 32px;
+    font-family: 'lato', sans-serif;
+
+    /* margin-left: 200px; */
+  }
+
+  .bar a {
+    color: #ec5242;
+  }
+
+  .toolbar {
+    display: none;
+    width: 100%;
+    height: 40px;
+    background-color: #272a31;
+  }
+
+  .tool {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background-color: #272a31;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding-left: 900px;
+    padding-top: 10px;
+    float: right;
+    font-family: 'lato', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .next-toolbar {
+    display: none;
+  }
+
+  #main {
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    background-image: url(./images/1200\ x\ 7680px.png);
+    background-repeat: no-repeat;
+    background-size: 210% 100%;
+    background-position: 50% 40%;
+  }
+
+  .page-heading {
+    padding-top: 100px;
+    margin-left: 50px;
+    width: 390px;
+  }
+
+  .heading {
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ec5242;
+  }
+
+  .heading1 {
+    text-align: center;
+    font-family: 'cocogoose', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    width: 400px;
+    margin-top: 20px;
+    color: #ec5242;
+  }
+
+  .paragraph {
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 180px;
+    width: 450px;
+    background-color: #ebf5fb;
+    border-radius: 30px;
+  }
+
+  .paragraph p {
+    width: 420px;
+    padding-top: 10px;
+    margin-left: 20px;
+    font-family: 'lato', sans-serif;
+    line-height: 26px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #272a31;
+  }
+
+  .email-p {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: 350px;
+    margin-left: 100px;
+  }
+
+  .email-p a {
+    color: #272a31;
+    cursor: pointer;
+  }
+
+  .events {
+    background-color: #fff;
+    width: 100%;
+    height: 700px;
+  }
+
+  .events-header h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'lato', sans-serif;
+    color: #272a31;
+    font-weight: 800;
+  }
+
+  .pictures {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 100px;
+    gap: 100px;
+  }
+
+  .pic1 {
+    margin-left: 50px;
+    background-image: url(./images/Untitled\ design\ \(6\).png);
+    height: 250px;
+    width: 400px;
+    font-size: 15px;
+  }
+
+  .pic1 h1 {
+    padding-top: 100px;
+    font-family: 'cocogoose', sans-serif;
+    opacity: 0.7;
+  }
+
+  .pic2 {
+    background-image: url(./images/Untitled\ design\ \(7\).png);
+    height: 280px;
+    width: 400px;
+    font-size: 15px;
+    margin-left: 50px;
+  }
+
+  .pic2 h1 {
+    padding-top: 100px;
+    font-family: 'cocogoose', sans-serif;
+    opacity: 0.7;
+  }
+
+  .footer-partner {
+    background-color: #272a31;
+    height: 300px;
+    margin-top: 250px;
+  }
+
+  .footer-head {
+    margin-left: 200px;
+    padding-top: 20px;
+    color: #d3d3d3;
+    font-family: 'lato', sans-serif;
+    font-weight: 900;
+  }
+
+  .partner-list {
+    margin-top: 50px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    grid-column-gap: 50px;
+  }
+
+  .list-p {
+    margin-top: 33px;
+    font-family: 'cocogoose', sans-serif;
+    font-size: 24px;
+    color: #959494;
+  }
+
+  .list-p2 {
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 200px;
+    font-family: 'cocogoose', sans-serif;
+    font-size: 24px;
+    color: #959191;
+  }
+
+  .last-footer {
+    height: 150px;
+    position: absolute;
+    background-image: url(./images/efa65d8127ef74475b6b38d6b35a934c--climate-change-logo-design.jpg);
+    background-size: 100px;
+    background-position: 20% 40%;
+    background-repeat: no-repeat;
+  }
+
+  .last-footer p {
+    margin-top: 50px;
+    font-family: 'lato', sans-serif;
+    font-size: 12px;
+    margin-left: 250px;
+    margin-bottom: 5px;
+  }
+
+  .last-footer a {
+    color: #272a31;
+    font-family: 'lato', sans-serif;
+    font-size: 12px;
+    margin-left: 250px;
+  }
+}

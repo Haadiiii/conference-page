@@ -32,9 +32,8 @@ To get a local copy up and running follow these simple example steps:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hamid-ali-01a872213/)
 
 ## LIVE DEMO
-[my portfolio](https://haadiiii.github.io/my-portfolio/)
 
-## live video
+## video
 
 Click [Here](https://www.loom.com/share/9ce8abffda424e609fd7134dc7b3981d) to watch video.
 

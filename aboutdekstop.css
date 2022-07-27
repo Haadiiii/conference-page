@@ -40,7 +40,7 @@
     margin-top: 10px;
     width: 50px;
     justify-content: center;
-    margin-left: 600px;
+    margin-left: 720px;
     background-color: #ec5242;
     border-color: #ec5242;
   }
@@ -269,14 +269,14 @@
     flex-direction: row;
     text-align: center;
     font-size: 12px;
-    margin-left: 80px;
+    margin-left: 200px;
     margin-top: 100px;
     gap: 100px;
   }
 
   .pic1 {
     margin-left: 50px;
-    width: 100%;
+    width: 400px;
     background-image: url(./images/Untitled\ design\ \(6\).png);
     height: 350px;
     font-size: 15px;

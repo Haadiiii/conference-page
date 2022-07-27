@@ -193,8 +193,6 @@
     background-image: url(./images/1200\ x\ 7680px.png);
     background-repeat: no-repeat;
     background-size: 300% 100%;
-
-    /* padding-left: 200px; */
     background-position: 60% 50%;
   }
 
@@ -290,7 +288,7 @@
     width: 400px;
     list-style: none;
     color: #d3d3d3;
-    margin-left: 20px;
+    margin-left: 60px;
   }
 
   .list1 {

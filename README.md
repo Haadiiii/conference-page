@@ -19,7 +19,7 @@ To get a local copy up and running follow these simple example steps:
 
 
 - setup
-- git clone https://github.com/Haadiiii/my-portfolio
+- git clone [Code]
 - cd my-portfolio
 
 
@@ -33,12 +33,15 @@ To get a local copy up and running follow these simple example steps:
 
 ## LIVE DEMO
 
+
 ## live video
 
+click [Here](https://www.loom.com/share/9ce8abffda424e609fd7134dc7b3981d) TO watch the video.
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b 'branchname`)
@@ -53,6 +56,8 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+* Original design idea by [Cindy Shin](https://www.behance.net/adagio07) in Behance.
+
 
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)

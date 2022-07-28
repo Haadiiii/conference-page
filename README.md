@@ -33,6 +33,8 @@ To get a local copy up and running follow these simple example steps:
 
 ## LIVE DEMO
 
+Click [here](https://haadiiii.github.io/conference-page/) to see live demo.
+
 
 ## live video
 

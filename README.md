@@ -19,8 +19,8 @@ To get a local copy up and running follow these simple example steps:
 
 
 - setup
-- git clone [Code](https://github.com/Haadiiii/conference-page.git)
-- cd conference-page
+- git clone [Code]
+- cd my-portfolio
 
 
 ## Authors
@@ -32,9 +32,7 @@ To get a local copy up and running follow these simple example steps:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hamid-ali-01a872213/)
 
 ## LIVE DEMO
-
-Click [here](https://haadiiii.github.io/conference-page/) to see live demo.
-
+ See live by clicking [here](https://haadiiii.github.io/conference-page/)
 
 ## live video
 

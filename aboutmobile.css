@@ -41,7 +41,7 @@
     margin-top: 10px;
     width: 50px;
     justify-content: center;
-    margin-left: 220px;
+    margin-left: 45%;
     background-color: #ec5242;
     border-color: #ec5242;
   }
@@ -211,7 +211,6 @@
 
   .events {
     background-color: #fff;
-    width: 500px;
     height: 700px;
     justify-content: center;
   }

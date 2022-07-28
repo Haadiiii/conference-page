@@ -33,9 +33,8 @@ To get a local copy up and running follow these simple example steps:
 
 ## LIVE DEMO
 
-## video
+## live video
 
-Click [Here](https://www.loom.com/share/9ce8abffda424e609fd7134dc7b3981d) to watch video.
 
 ## 🤝 Contributing
 

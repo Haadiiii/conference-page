@@ -136,8 +136,6 @@
     font-weight: 600;
   }
 
-
-
   .next-toolbar {
     display: flex;
 
@@ -153,8 +151,6 @@
     margin-left: 300px;
     cursor: pointer;
   }
-
-
 
   .tool2 {
     display: flex;
@@ -266,8 +262,6 @@
   }
 
   #middle {
-    width: 100vw;
-    height: 90vh;
     background-color: #272a31;
     display: flex;
     flex-direction: column;
@@ -295,12 +289,11 @@
   .list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 95vw;
     list-style: none;
     gap: 10px;
     color: #d3d3d3;
     align-items: center;
-    margin-right: 30px;
+    padding-bottom: 50px;
   }
 
   .list1 {
@@ -384,7 +377,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 400px;
-    width: 60%;
+    width: 64%;
     margin-top: 50px;
     font-family: 'cocogoose', sans-serif;
     font-size: 20px;

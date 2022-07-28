@@ -48,7 +48,7 @@
 
   .footer-head hr {
     width: 50px;
-    margin-left: 350px;
+    margin-left: 43%;
     margin-top: 5px;
     background-color: #ec5242;
     border-color: #ec5242;
@@ -159,8 +159,6 @@
   .page-heading {
     padding-top: 100px;
     text-align: center;
-    margin-left: 50px;
-    width: 390px;
   }
 
   .heading {
@@ -182,16 +180,12 @@
   }
 
   .paragraph {
-    margin-left: 30px;
     margin-top: 30px;
-    height: 180px;
-    width: 450px;
     background-color: #ebf5fb;
     border-radius: 30px;
   }
 
   .paragraph p {
-    width: 420px;
     padding-top: 10px;
     margin-left: 20px;
     font-family: 'lato', sans-serif;
@@ -207,8 +201,7 @@
     font-family: 'lato', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    width: 350px;
-    margin-left: 100px;
+    margin-left: 50px;
   }
 
   .email-p a {
@@ -234,16 +227,13 @@
   .pictures {
     display: flex;
     flex-direction: column;
-    width: 500px;
     text-align: center;
     font-size: 12px;
-    margin-left: 10px;
     margin-top: 100px;
     gap: 100px;
   }
 
   .pic1 {
-    margin-left: 50px;
     background-image: url(./images/pic1.png);
     height: 250px;
     width: 400px;
@@ -261,7 +251,6 @@
     height: 280px;
     width: 400px;
     font-size: 15px;
-    margin-left: 50px;
   }
 
   .pic2 h1 {
@@ -288,7 +277,7 @@
     margin-top: 50px;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(3, 80px);
     justify-content: center;
     grid-column-gap: 70px;
     grid-row-gap: 50px;

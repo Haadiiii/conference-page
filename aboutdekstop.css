@@ -48,7 +48,7 @@
 
   .events-header hr {
     width: 50px;
-    margin-left: 740px;
+    margin-left: 50%;
     margin-top: 5px;
     background-color: #ec5242;
     border-color: #ec5242;
@@ -65,7 +65,7 @@
   .footer-head hr {
     width: 50px;
     margin-top: 5px;
-    margin-left: 220px;
+    margin-left: 43%;
     background-color: #ec5242;
     border-color: #ec5242;
   }
@@ -314,7 +314,7 @@
   }
 
   .footer-head {
-    padding-left: 400px;
+    padding-left: 40%;
     text-align: center;
     padding-top: 20px;
     color: #d3d3d3;

@@ -138,8 +138,6 @@
 
   .next-toolbar {
     display: flex;
-
-    /* position: fixed; */
     width: 100vw;
     height: 70px;
     background-color: #fff;
@@ -162,7 +160,7 @@
   }
 
   .tool2 li {
-    margin-right: 20px;
+    margin-right: 17px;
   }
 
   .tool2 a {
@@ -187,7 +185,6 @@
   }
 
   #main {
-    border: 3px solid blue;
     width: 100vw;
     height: 900px;
     background-color: black;
@@ -226,7 +223,6 @@
 
   .paragraph {
     margin-left: 10%;
-    height: 120px;
     width: 65%;
     margin-top: 50px;
     background-color: #ebf5fb;
@@ -290,22 +286,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     list-style: none;
-    gap: 10px;
+    gap: 5px;
     color: #d3d3d3;
     align-items: center;
     padding-bottom: 50px;
+    margin-left: 5%;
   }
 
   .list1 {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    width: 19vw;
+    gap: 42px;
+    width: 17vw;
     list-style: none;
     margin-top: 40px;
     background-color: #434958;
     height: 250px;
     align-items: center;
+    justify-content: center;
   }
 
   .list1:hover {
@@ -376,7 +374,7 @@
   .s-header {
     align-items: center;
     justify-content: center;
-    margin-left: 400px;
+    margin-left: 350px;
     width: 64%;
     margin-top: 50px;
     font-family: 'cocogoose', sans-serif;

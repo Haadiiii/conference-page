@@ -48,7 +48,7 @@
 
   .events-header hr {
     width: 50px;
-    margin-left: 50%;
+    margin-left: 45%;
     margin-top: 5px;
     background-color: #ec5242;
     border-color: #ec5242;
@@ -65,7 +65,8 @@
   .footer-head hr {
     width: 50px;
     margin-top: 5px;
-    margin-left: 43%;
+
+    /* margin-left: 10%; */
     background-color: #ec5242;
     border-color: #ec5242;
   }
@@ -165,7 +166,7 @@
   }
 
   .tool2 li {
-    margin-right: 20px;
+    margin-right: 17px;
   }
 
   .tool2 a {
@@ -194,7 +195,6 @@
   }
 
   #main {
-    border: 3px solid blue;
     width: 100vw;
     height: 900px;
     background-color: black;
@@ -228,7 +228,6 @@
 
   .paragraph {
     margin-left: 10%;
-    height: 190px;
     width: 65%;
     margin-top: 50px;
     background-color: #ebf5fb;
@@ -314,8 +313,10 @@
   }
 
   .footer-head {
-    padding-left: 40%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
     padding-top: 20px;
     color: #d3d3d3;
     font-family: 'lato', sans-serif;

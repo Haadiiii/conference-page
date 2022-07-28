@@ -218,16 +218,13 @@
   .list1 {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
-    width: 73vw;
+    width: 90vw;
     margin-top: 20px;
     margin-left: 10px;
     background-color: #434958;
-    padding-top: 50px;
-    padding-left: 10px;
-    text-align: center;
-    align-items: center;
+    padding-top: 60px;
   }
 
   .list1:hover {
@@ -239,7 +236,11 @@
   .listname {
     color: #ec5242;
     font-family: 'cocogoose', sans-serif;
-    font-size: 12px;
+    font-size: 17px;
+  }
+
+  .listp {
+    font-size: 17px;
   }
 
   #btn {

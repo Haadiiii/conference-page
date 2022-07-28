@@ -19,8 +19,8 @@ To get a local copy up and running follow these simple example steps:
 
 
 - setup
-- git clone [Code]
-- cd my-portfolio
+- git clone [Code](https://github.com/Haadiiii/conference-page.git)
+- cd conference-page
 
 
 ## Authors

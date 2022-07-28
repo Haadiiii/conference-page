@@ -27,7 +27,7 @@ const speaker1 = {
 
 const speaker2 = {
   heading1: 'Mr. Liu Zhenmin',
-  title: 'Under-secretary-General of the UN',
+  title: 'Under-secretary-General of the, UN',
   description: 'He is also the founder and board member of Science movement',
   imageSrc: '<img src="./images/Untitleddesign1.png" alt="">',
 };

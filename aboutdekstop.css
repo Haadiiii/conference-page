@@ -191,7 +191,6 @@
     color: #f5f7fc;
   }
 
-
   .email-p a {
     color: #f5f7fc;
   }
@@ -209,16 +208,15 @@
   #main {
     width: 100vw;
     height: 900px;
-    background:
-      linear-gradient(
-        132deg,
-        pink,
-        green,
-        black,
-        yellow,
-        #591bc5,
-        #212335
-      );
+    background: linear-gradient(
+      132deg,
+      pink,
+      green,
+      black,
+      yellow,
+      #591bc5,
+      #212335
+    );
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
     position: relative;

@@ -1,5 +1,5 @@
-@import url('http://fonts.cdnfonts.com/css/cocogoose');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -63,10 +63,7 @@
     width: 30px;
     height: 4px;
     background-color: rgb(168, 162, 162);
-
-    /* margin: 1px; */
     transition: 0.4s;
-    z-index: 10;
   }
 
   #hamburger.active .ham:nth-child(2) {
@@ -82,7 +79,7 @@
   }
 
   #bar-menu {
-    position: fixed;
+    position: absolute;
     left: -150%;
     top: 0.001px;
     gap: 0;
@@ -96,6 +93,8 @@
     padding-top: 130px;
     padding-left: 40px;
     list-style: none;
+    opacity: 0.95;
+    font-weight: bolder;
   }
 
   #bar-menu.active {
@@ -110,7 +109,7 @@
     width: 100%;
     margin-top: 40px;
     font-size: 32px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
 
     /* margin-left: 200px; */
   }
@@ -137,7 +136,7 @@
     padding-left: 900px;
     padding-top: 10px;
     float: right;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 13px;
     font-weight: 600;
   }
@@ -148,65 +147,178 @@
 
   #main {
     height: 700px;
-    text-align: center;
-    background-color: black;
-    background-image: url(./images/1200\ x\ 7680px.png);
-    background-repeat: no-repeat;
-    background-size: 210% 100%;
-    background-position: 50% 40%;
+    background:
+      linear-gradient(
+        132deg,
+        pink,
+        green,
+        black,
+        yellow,
+        #591bc5,
+        #212335
+      );
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    overflow: hidden;
+  }
+
+  .cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #111112;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+  }
+
+  .cube:nth-child(2n) {
+    border-color: rgb(243, 12, 12);
+  }
+
+  .cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+
+  .cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+
+  .cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+
+  .cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+
+  .cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+  .cube:nth-child(11) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+
+  .cube:nth-child(7) {
+    animation-delay: 5s;
+    left: 75vw;
+    top: 50vh;
+  }
+
+  .cube:nth-child(8) {
+    animation-delay: 3s;
+    left: 90vw;
+    top: 10vh;
+  }
+
+  .cube:nth-child(9) {
+    animation-delay: 2s;
+    left: 10vw;
+    top: 85vh;
+  }
+
+  .cube:nth-child(10) {
+    animation-delay: 1s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    30% {
+      background-position: 40% 70%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
   }
 
   .page-heading {
     padding-top: 100px;
-    text-align: center;
+    margin-left: 30px;
   }
 
   .heading {
-    text-align: center;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 32px;
     font-weight: 700;
     color: #ec5242;
   }
 
   .heading1 {
-    text-align: center;
-    font-family: 'cocogoose', sans-serif;
-    font-size: 38px;
+    font-family: "cocogoose", sans-serif;
+    font-size: 32px;
     font-weight: 700;
-    width: 400px;
     margin-top: 20px;
-    color: #ec5242;
+    color: transparent;
+    background-image: url(./images/R.jfif);
+    background-clip: inherit;
+    -webkit-background-clip: text;
   }
 
   .paragraph {
-    margin-top: 30px;
-    background-color: #ebf5fb;
-    border-radius: 30px;
+    margin-left: 5px;
+
+    /* height: 130px; */
+    border: 2px solid white;
   }
 
   .paragraph p {
-    padding-top: 10px;
     margin-left: 20px;
-    font-family: 'lato', sans-serif;
-    line-height: 26px;
+    font-family: "lato", sans-serif;
     font-size: 15px;
-    font-weight: 700;
-    color: #272a31;
+    font-weight: bolder;
+    color: #fff;
   }
 
   .email-p {
     margin-top: 50px;
     text-align: center;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 15px;
     font-weight: 600;
-    margin-left: 50px;
+    margin-left: 15px;
+    color: #fff;
   }
 
   .email-p a {
-    color: #272a31;
     cursor: pointer;
+    color: #fff;
   }
 
   .events {
@@ -218,7 +330,7 @@
   .events-header h1 {
     text-align: center;
     margin-top: 70px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     color: #272a31;
     font-weight: 800;
   }
@@ -241,7 +353,7 @@
 
   .pic1 h1 {
     padding-top: 100px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     opacity: 0.7;
   }
 
@@ -254,7 +366,7 @@
 
   .pic2 h1 {
     padding-top: 100px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     opacity: 0.7;
   }
 
@@ -268,7 +380,7 @@
     text-align: center;
     padding-top: 20px;
     color: #d3d3d3;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-weight: 900;
   }
 
@@ -284,7 +396,7 @@
 
   .list-p {
     margin-top: 33px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 24px;
     color: #959494;
   }
@@ -293,7 +405,7 @@
     margin-left: 80px;
     margin-top: 10px;
     width: 200px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 24px;
     color: #959191;
   }
@@ -309,7 +421,7 @@
 
   .last-footer p {
     margin-top: 50px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 12px;
     margin-left: 250px;
     margin-bottom: 5px;
@@ -317,7 +429,7 @@
 
   .last-footer a {
     color: #272a31;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 12px;
     margin-left: 250px;
   }

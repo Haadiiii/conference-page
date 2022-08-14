@@ -1,5 +1,5 @@
-@import url('http://fonts.cdnfonts.com/css/cocogoose');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -96,6 +96,8 @@
     padding-top: 70px;
     padding-left: 40px;
     list-style: none;
+    opacity: 0.95;
+    font-weight: bolder;
   }
 
   #bar-menu.active {
@@ -105,7 +107,7 @@
   .bar {
     margin-top: 30px;
     font-size: 32px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
   }
 
   .bar a {
@@ -122,11 +124,125 @@
 
   #main {
     height: 600px;
-    background-color: black;
-    background-image: url(./images/1200\ x\ 7680px.png);
-    background-repeat: no-repeat;
-    background-size: 210% 100%;
-    background-position: 50% 50%;
+    background:
+      linear-gradient(
+        132deg,
+        pink,
+        green,
+        black,
+        yellow,
+        #591bc5,
+        #212335
+      );
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    overflow: hidden;
+  }
+
+  .cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #111112;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+  }
+
+  .cube:nth-child(2n) {
+    border-color: rgb(243, 12, 12);
+  }
+
+  .cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+
+  .cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+
+  .cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+
+  .cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+
+  .cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+  .cube:nth-child(11) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+
+  .cube:nth-child(7) {
+    animation-delay: 5s;
+    left: 75vw;
+    top: 50vh;
+  }
+
+  .cube:nth-child(8) {
+    animation-delay: 3s;
+    left: 90vw;
+    top: 10vh;
+  }
+
+  .cube:nth-child(9) {
+    animation-delay: 2s;
+    left: 10vw;
+    top: 85vh;
+  }
+
+  .cube:nth-child(10) {
+    animation-delay: 1s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    30% {
+      background-position: 40% 70%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
   }
 
   .page-heading {
@@ -135,14 +251,14 @@
   }
 
   .heading {
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 32px;
     font-weight: 700;
     color: #ec5242;
   }
 
   .heading1 {
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 32px;
     font-weight: 700;
     margin-top: 20px;
@@ -153,35 +269,35 @@
   }
 
   .paragraph {
-    margin-left: 10px;
-    height: 130px;
-    background-color: #ebf5fb;
-    border-radius: 30px;
+    margin-left: 5px;
+
+    /* height: 130px; */
+    border: 2px solid white;
   }
 
   .paragraph p {
-    padding-top: 15px;
     margin-left: 20px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 15px;
-    font-weight: 700;
-    color: #272a31;
+    font-weight: bolder;
+    color: #fff;
   }
 
   .date h1 {
     margin-top: 20px;
     margin-left: 30px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 20px;
-    color: #272a31;
+    color: #fff;
   }
 
   .date p {
     margin-top: 10px;
     margin-left: 30px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 24px;
     font-weight: 800;
+    color: #fff;
   }
 
   #middle {
@@ -191,7 +307,7 @@
 
   #middle h1 {
     padding-top: 70px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-weight: 900;
     color: #d3d3d3;
   }
@@ -235,7 +351,7 @@
 
   .listname {
     color: #ec5242;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 17px;
   }
 
@@ -251,7 +367,7 @@
   #btn button {
     padding: 28px 40px 28px 60px;
     color: #d3d3d3;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 17px;
     background-color: #ec5242;
     border: none;
@@ -285,7 +401,7 @@
     margin-left: 50px;
     width: 80%;
     margin-top: 50px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 20px;
     font-weight: 400;
   }
@@ -307,14 +423,14 @@
   }
 
   .speaker-H {
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 17px;
     color: #272a31;
     margin-bottom: 5px;
   }
 
   .speaker-t {
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 15px;
     color: #ec5242;
     font-weight: 600;
@@ -322,7 +438,7 @@
   }
 
   .speaker-D {
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 17px;
     font-weight: 300;
   }
@@ -338,7 +454,7 @@
     text-align: center;
     padding-top: 20px;
     color: #d3d3d3;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-weight: 900;
   }
 
@@ -353,7 +469,7 @@
 
   .list-p {
     margin-top: 33px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 24px;
     color: #959494;
   }
@@ -361,7 +477,7 @@
   .list-p2 {
     margin-left: 80px;
     margin-top: 10px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 24px;
     color: #959191;
   }
@@ -377,7 +493,7 @@
 
   .last-footer p {
     margin-top: 50px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 12px;
     margin-left: 250px;
     margin-bottom: 5px;
@@ -385,7 +501,7 @@
 
   .last-footer a {
     color: #272a31;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 12px;
     margin-left: 250px;
   }

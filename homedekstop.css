@@ -1,5 +1,5 @@
-@import url('http://fonts.cdnfonts.com/css/cocogoose');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -114,7 +114,7 @@
   .bar {
     margin-top: 30px;
     font-size: 32px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
   }
 
   .toolbar {
@@ -131,7 +131,7 @@
     list-style: none;
     gap: 30px;
     padding-top: 10px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 13px;
     font-weight: 600;
   }
@@ -154,7 +154,7 @@
     display: flex;
     list-style: none;
     margin-top: 30px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-weight: 800;
     font-size: 17px;
   }
@@ -169,7 +169,7 @@
 
   .last-footer a {
     color: #272a31;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 12px;
     margin-left: 650px;
   }
@@ -187,11 +187,132 @@
   #main {
     width: 100vw;
     height: 900px;
-    background-color: black;
-    background-image: url(./images/1200\ x\ 7680px.png);
-    background-repeat: no-repeat;
-    background-size: 300% 100%;
-    background-position: 60% 50%;
+    background:
+      linear-gradient(
+        132deg,
+        pink,
+        green,
+        black,
+        yellow,
+        #591bc5,
+        #212335
+      );
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #111112;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+  }
+
+  .cube:nth-child(2n) {
+    border-color: rgb(243, 12, 12);
+  }
+
+  .cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+
+  .cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+
+  .cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+
+  .cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+
+  .cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+  .cube:nth-child(11) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+
+  .cube:nth-child(7) {
+    animation-delay: 5s;
+    left: 75vw;
+    top: 50vh;
+  }
+
+  .cube:nth-child(8) {
+    animation-delay: 3s;
+    left: 90vw;
+    top: 10vh;
+  }
+
+  .cube:nth-child(9) {
+    animation-delay: 2s;
+    left: 10vw;
+    top: 85vh;
+  }
+
+  .cube:nth-child(10) {
+    animation-delay: 1s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    30% {
+      background-position: 40% 70%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  #main-page {
+    z-index: 10;
   }
 
   .page-heading {
@@ -201,7 +322,7 @@
   }
 
   .heading {
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 48px;
     width: 500px;
     font-weight: 700;
@@ -209,7 +330,7 @@
   }
 
   .heading1 {
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 60px;
     font-weight: 500;
     margin-top: 20px;
@@ -225,36 +346,36 @@
     margin-left: 10%;
     width: 65%;
     margin-top: 50px;
-    background-color: #ebf5fb;
-    border-radius: 30px;
+    border: 1px solid white;
   }
 
   .paragraph p {
     width: 95%;
-    padding-top: 15px;
+    padding-top: 10px;
     margin-left: 20px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 20px;
-    font-weight: 400;
-    color: #272a31;
+    font-weight: 600;
+    color: #f5f7fc;
   }
 
   .date h1 {
     width: 500px;
     margin-top: 20px;
     margin-left: 10%;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 32px;
-    color: #272a31;
+    color: #f5f7fc;
   }
 
   .date p {
     width: 500px;
     margin-top: 10px;
     margin-left: 10%;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 32px;
     font-weight: 800;
+    color: #f5f7fc;
   }
 
   #middle {
@@ -266,7 +387,7 @@
 
   #middle h1 {
     text-align: center;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-weight: 900;
     font-size: 32px;
     color: #d3d3d3;
@@ -318,7 +439,7 @@
 
   .listname {
     color: #ec5242;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     margin-top: -30px;
   }
 
@@ -337,7 +458,7 @@
     padding: 28px 80px 28px 80px;
     color: #d3d3d3;
     width: 500px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 17px;
     background-color: #ec5242;
     border: none;
@@ -377,7 +498,7 @@
     margin-left: 350px;
     width: 64%;
     margin-top: 50px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 20px;
     font-weight: 400;
   }
@@ -400,14 +521,14 @@
   }
 
   .speaker-H {
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 17px;
     color: #272a31;
     margin-bottom: 5px;
   }
 
   .speaker-t {
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 17px;
     width: 200px;
     color: #ec5242;
@@ -416,7 +537,7 @@
   }
 
   .speaker-D {
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 17px;
     font-weight: 600;
     width: 250px;
@@ -436,7 +557,7 @@
     margin: auto;
     padding-top: 20px;
     color: #d3d3d3;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-weight: 900;
     width: 500px;
   }
@@ -452,7 +573,7 @@
 
   .list-p {
     margin-top: 25px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 24px;
     color: #959494;
   }
@@ -461,7 +582,7 @@
     /* margin-left: 80px; */
     margin-top: 5px;
     width: 200px;
-    font-family: 'cocogoose', sans-serif;
+    font-family: "cocogoose", sans-serif;
     font-size: 24px;
     color: #959191;
   }
@@ -477,7 +598,7 @@
 
   .last-footer p {
     margin-top: 50px;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 12px;
     margin-left: 650px;
     margin-bottom: 5px;
